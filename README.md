@@ -166,6 +166,15 @@ The application uses the following APIs:
   - Quotable API
   - Gemini API
 
+## Vercel Integration
+
+This project integrates Vercel's Speed Insights and Analytics to enhance performance monitoring and user interaction tracking.
+
+- **Speed Insights**: Automatically collects and reports performance metrics, helping to monitor Core Web Vitals and identify performance bottlenecks.
+- **Analytics**: Tracks user interactions and page views, providing insights into user behavior and engagement.
+
+These integrations are configured in the `layout.tsx` file, ensuring that performance and analytics data are collected seamlessly during deployment on Vercel.
+
 ## Contributing
 
 1. Fork the repository
