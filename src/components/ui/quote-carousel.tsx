@@ -1,3 +1,5 @@
+'use client';
+
 import { Quote } from "@/utils/fetch-quote";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./carousel";
 import { CarouselApi } from "./carousel-api";

@@ -5,7 +5,15 @@ interface QuoteHeaderProps {
   };
 }
 
+const formatDate = (date: Date): string => {
+  const options: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', year: 'numeric' };
+  return date.toLocaleDateString(undefined, options);
+};
+
 export function QuoteHeader({ currentScheme }: QuoteHeaderProps) {
+  const currentDate = new Date();
+  const formattedDate = formatDate(currentDate);
+
   return (
     <header 
       className="w-full py-2 sm:py-3 md:py-4"
@@ -21,8 +29,8 @@ export function QuoteHeader({ currentScheme }: QuoteHeaderProps) {
           transition: 'all 0.5s ease-in-out'
         }}
       >
-        Quote of the Day
+        Quote of {formattedDate}
       </h1>
     </header>
   );
-} 
+}

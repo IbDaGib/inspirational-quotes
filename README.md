@@ -2,6 +2,23 @@
 
 A modern, interactive web application that generates inspirational quotes with beautiful visualizations and AI-powered explanations.
 
+## Project Overview & Approach
+
+This project was inspired by quote of the day applications, with a focus on creating a simple and intuitive user interface. The design draws inspiration from aesthetically pleasing websites like [altl.io](https://altl.io/), emphasizing clean design and user experience.
+
+### Key Implementation Details
+- Utilized shadcn/ui components for a modern, consistent UI design
+- Adapted to API challenges by using an alternative endpoint when quotable.io was down
+- Implemented comprehensive test cases using Cursor's AI assistance
+- Focused on simplicity while maintaining functionality
+
+### Future Development Opportunities
+- Implement an origami fortune teller-like interaction mode
+- Create a node network visualization connecting tags to quotes
+- Add a caching system for quotes with 24-hour reset and 20-quote limit
+- Implement email collection functionality for quote sharing
+- Develop deeper user interaction features
+
 ## Features
 
 - 🎨 **Dynamic Visual Design**
@@ -33,6 +50,26 @@ A modern, interactive web application that generates inspirational quotes with b
   - Customizable quote display
   - Responsive layout
 
+## AI Tools & Prompts Used
+
+During development, several AI tools were leveraged to enhance productivity:
+
+### Tools
+- Cursor: Primary development environment and code generation
+- ChatGPT: General questions and problem-solving
+- Deepseek: Repetitive tasks and specific insights
+- Claude 3.5 Sonnet (Agent mode): Code structuring and refactoring
+
+### Notable Prompts Used
+- "Refactor my code to make it more manageable"
+- "Set up my docker container from scratch"
+- "Create test cases for core components"
+- "Scrape this website's HTML to get the colorschemes variations"
+- "Use {insert shadui component} to build {component}"
+- "Create a .env file to store my API keys"
+- "What is the difference between .env and .env.local"
+- "Is there a more efficient way to randomly grab tags"
+
 ## Installation
 
 ### Local Development
@@ -48,12 +85,18 @@ A modern, interactive web application that generates inspirational quotes with b
    npm install
    ```
 
-3. Start the development server:
+3. Set up environment variables:
+   ```bash
+   cp .env.example .env
+   ```
+   Then edit `.env` and add your Gemini API key. You can get one at https://makersuite.google.com/app/apikey
+
+4. Start the development server:
    ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Docker Deployment
 
@@ -133,9 +176,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Quotes provided by [Quotable API](https://api.quotable.kurokeita.dev/)
+- Alternative Quote API endpoint by [kurokeita](https://api.quotable.kurokeita.dev/) (Used when quotable.io was down)
+- Design inspiration from [altl.io](https://altl.io/)
 - AI explanations powered by Gemini
-- Design inspiration from various sources
 - Special thanks to all contributors
 
 <!-- ## Contact
