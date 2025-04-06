@@ -2,6 +2,10 @@
 
 A modern, interactive web application that generates inspirational quotes with beautiful visualizations and AI-powered explanations.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b3767585-877a-4958-8d2c-9c203962a0db" width="300" />
+</p>
+
 ## Project Overview & Approach
 
 This project was inspired by quote of the day applications, with a focus on creating a simple and intuitive user interface. The design draws inspiration from aesthetically pleasing websites like [altl.io](https://altl.io/), emphasizing clean design and user experience.
