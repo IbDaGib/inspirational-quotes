@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { QuoteDisplay } from '@/components/quote-display';
+import { QuoteDisplay } from '@/components/main/quote-display';
 import { fetchQuote, Quote } from '@/utils/fetch-quote';
 
 export default function Home() {

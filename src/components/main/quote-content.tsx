@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Quote } from "@/utils/fetch-quote";
-import { QuoteSkeleton } from "./ui/quote-skeleton";
+import { QuoteSkeleton } from "../ui/quote-skeleton";
 
 interface QuoteContentProps {
   quote: Quote | null;

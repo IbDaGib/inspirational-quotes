@@ -1,11 +1,11 @@
 'use client';
 
 import { Quote } from "@/utils/fetch-quote";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./carousel";
-import { CarouselApi } from "./carousel-api";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./shadcn/carousel";
+import { CarouselApi } from "./shadcn/carousel-api";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./shadcn/tooltip";
 
 interface QuoteCarouselProps {
   quotes: Quote[];

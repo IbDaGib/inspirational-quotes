@@ -1,4 +1,4 @@
-import { ExplanationSkeleton } from "./ui/explanation-skeleton";
+import { ExplanationSkeleton } from "../ui/explanation-skeleton";
 
 interface QuoteExplanationProps {
   aiExplanation: string | null;

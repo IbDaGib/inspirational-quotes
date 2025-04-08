@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
-import { ShareMenu } from "./ui/share-menu";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
+import { ShareMenu } from "../ui/share-menu";
 import { Quote } from "@/utils/fetch-quote";
 
 interface QuoteActionsProps {

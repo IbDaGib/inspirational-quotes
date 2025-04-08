@@ -9,10 +9,10 @@ import { QuoteContent } from './quote-content';
 import { QuoteExplanation } from './quote-explanation';
 import { QuoteActions } from './quote-actions';
 import { QuoteRefresh } from './quote-refresh';
-import { QuoteCarousel } from './ui/quote-carousel';
-import { CarouselSkeleton } from './ui/carousel-skeleton';
-import { TagsSkeleton } from './ui/tags-skeleton';
-import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
+import { QuoteCarousel } from '../ui/quote-carousel';
+import { CarouselSkeleton } from '../ui/carousel-skeleton';
+import { TagsSkeleton } from '../ui/tags-skeleton';
+import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/shadcn/tooltip';
 
 // Hooks
 import { useStyleManager } from '@/hooks/useStyleManager';
