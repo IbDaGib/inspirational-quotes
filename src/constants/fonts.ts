@@ -9,4 +9,8 @@ export const fonts = [
   'font-cormorant',
   'font-montserrat',
   'font-cinzel'
-]; 
+];
+
+export const getRandomFont = () => {
+  return fonts[Math.floor(Math.random() * fonts.length)];
+};

@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from 'react';
 import { colorSchemes, getRandomScheme } from '@/constants/color-schemes';
-import { fonts } from '@/constants/fonts';
+import { fonts, getRandomFont } from '@/constants/fonts';
 
 const getRandomIndex = (arrayLength: number, lastIndex: number) => {
   let index;
@@ -20,6 +20,7 @@ export function useStyleManager() {
   // Apply random scheme after initial mount
   useEffect(() => {
     setCurrentScheme(getRandomScheme());
+    setCurrentFont(getRandomFont());
   }, []);
 
   const applyRandomColorScheme = useCallback(() => {

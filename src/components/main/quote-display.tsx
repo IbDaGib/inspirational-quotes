@@ -35,7 +35,7 @@ export function QuoteDisplay({ quote, loading, onNewQuote }: QuoteDisplayProps) 
   const quoteImageRef = useRef<HTMLDivElement>(null);
 
   // Style Management
-  const { currentScheme, currentFont, applyRandomColorScheme } = useStyleManager();
+  const { currentScheme, currentFont, applyRandomColorScheme, applyRandomFont } = useStyleManager();
 
   // AI Explanation
   const {
@@ -57,6 +57,7 @@ export function QuoteDisplay({ quote, loading, onNewQuote }: QuoteDisplayProps) 
     refreshTags 
   } = useTagManager({ 
     applyRandomColorScheme, 
+    applyRandomFont,
     resetExplanation 
   });
 
@@ -75,6 +76,7 @@ export function QuoteDisplay({ quote, loading, onNewQuote }: QuoteDisplayProps) 
     try {
       onNewQuote();
       applyRandomColorScheme();
+      applyRandomFont();
       await refreshTags();
       setIsVisible(true);
     } catch (error) {

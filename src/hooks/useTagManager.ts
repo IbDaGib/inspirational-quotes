@@ -13,6 +13,7 @@ interface QuotableQuote {
 
 interface TagManagerDependencies {
   applyRandomColorScheme: () => void;
+  applyRandomFont: () => void;
   resetExplanation: () => void;
 }
 
