@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useCallback } from 'react';
-import { colorSchemes } from '@/constants/color-schemes';
+import { useState, useCallback, useEffect } from 'react';
+import { colorSchemes, getRandomScheme } from '@/constants/color-schemes';
 import { fonts } from '@/constants/fonts';
 
 const getRandomIndex = (arrayLength: number, lastIndex: number) => {
@@ -13,8 +13,14 @@ const getRandomIndex = (arrayLength: number, lastIndex: number) => {
 };
 
 export function useStyleManager() {
+  // Start with a consistent initial state (first color scheme)
   const [currentScheme, setCurrentScheme] = useState(colorSchemes[0]);
   const [currentFont, setCurrentFont] = useState(fonts[0]);
+
+  // Apply random scheme after initial mount
+  useEffect(() => {
+    setCurrentScheme(getRandomScheme());
+  }, []);
 
   const applyRandomColorScheme = useCallback(() => {
     const randomSchemeIndex = getRandomIndex(colorSchemes.length, colorSchemes.indexOf(currentScheme));
